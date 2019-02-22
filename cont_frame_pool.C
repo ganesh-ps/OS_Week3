@@ -219,7 +219,7 @@ unsigned long ContFramePool::get_frames(unsigned int _n_frames)
 	    if(contiguous_available_frames == required_no_of_frames){
 		new_head = i-required_no_of_frames + 1 + base_frame_no; // tail - sequence length + 1
 		contiguous = true;
-		Console::puts("new_head: ");Console::putui(new_head);Console::puts("\n");
+		//Console::puts("new_head: ");Console::putui(new_head);Console::puts("\n");
 		break;
 	    }
 	}
